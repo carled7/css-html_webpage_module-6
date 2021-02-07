@@ -1,0 +1,100 @@
+body{
+    width: 1080px;
+    height: 1080px;
+    margin: auto;
+    background-color: #F2F2F2;
+}
+header{
+    background-color: #070D0D;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Roboto light", Arial, sans-serif;
+    font-size: 1.1em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+main{
+    background: url(./assets/background.jpg);
+    background-size: 1080px;
+    background-repeat: no-repeat;
+    height: 640px;
+}
+#nd_section{
+    position: relative;
+    top: -315px;
+    background-image: linear-gradient(to top, rgb(7, 13, 13) 60%, rgba(7, 13, 13, 0.6) 80%, rgba(7, 13, 13, 0));
+    height: 640px;
+    z-index:0;
+}
+#call{
+    height: 509px;
+    width: 366px;
+    background-color: rgba(229, 241, 241, 0.75); 
+    float: right;
+    margin-right: 80px;
+    margin-top: 40px;
+    font-family: "Abel", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+#text_call{
+    padding: 35px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+article{
+    color: #f2f8f8;
+    padding-top: 305px;;
+    margin-left: 635px;
+    margin-right: 80px;
+    font-family: "Abel", sans-serif;
+}
+#tittle{
+    margin: 0px;
+    font-size: 24px;
+}
+p{
+    font-size: 20px;
+}
+img{
+    margin-left: 65px;
+    float: left;
+}
+input{
+    background-color: #F2F8F8;
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-family: "Abel", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    color: #999999;
+    box-sizing: border-box;
+}
+#submit{
+    background-color: #F23030;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 24px;
+}
+select{
+    background-color: #F2F8F8;
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-family: "Abel", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    appearance: none;
+    background-image: url(./assets/picker.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px), center;
+    background-size: 10px;
+}
+form{
+    padding-left: 35px;
+}
