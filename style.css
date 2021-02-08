@@ -34,7 +34,7 @@ main{
     float: right;
     margin-right: 80px;
     margin-top: 40px;
-    font-family: "Abel", sans-serif;
+    font-family: 'Abel', sans-serif;
     position: relative;
     z-index: 1;
 }
@@ -48,7 +48,7 @@ article{
     padding-top: 305px;;
     margin-left: 635px;
     margin-right: 80px;
-    font-family: "Abel", sans-serif;
+    font-family: 'Abel', sans-serif;
 }
 #tittle{
     margin: 0px;
@@ -66,7 +66,7 @@ input{
     width: 300px;
     height: 50px;
     border: none;
-    font-family: "Abel", sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 20px;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -84,7 +84,7 @@ select{
     width: 300px;
     height: 50px;
     border: none;
-    font-family: "Abel", sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 20px;
     text-align: left;
     padding-left: 20px;
