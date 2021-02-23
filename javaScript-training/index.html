@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="sortcut icon" href="JSicon.webp">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <h1>JavaScript training</h1>
     <p>This page was created to test some of the features I'm learning.</p>
 
     <div>
-        <a href="#">Button 01</a>
-        <a href="#">Button 02</a>
+        <a onmouseover="overButton(this)" onmouseout="outButton(this)" href="#">Button 01</a>
+        <a onmouseover="overButton(this)" onmouseout="outButton(this)" href="#">Button 02</a>
     </div>
+    <!--<script>
+        function overButton(x) {
+        x.style.backgroundColor = "red"
+        }
+    </script>-->
 </body>
+
 </html>
