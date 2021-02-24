@@ -14,16 +14,23 @@
 <body>
     <h1>JavaScript training</h1>
     <p>This page was created to test some of the features I'm learning.</p>
-
+    <p>The buttons below use JS events to be responsive.</p>
+    <p>This is an example of how the JavaScript can interact with CSS:</p>
     <div>
-        <a onmouseover="overButton(this)" onmouseout="outButton(this)" href="#">Button 01</a>
-        <a onmouseover="overButton(this)" onmouseout="outButton(this)" href="#">Button 02</a>
+        <a onmouseover="overButton(this)" onmouseout="outButton(this)" onclick="count()" href="#">Button 01</a>
+        <a onmouseover="overButton(this)" onmouseout="outButton(this)" onclick="count2()" href="#">Button 02</a>
+        <a onmouseover="overButton(this)" onmouseout="outButton(this)" onclick="count3()" href="#">Button 03</a>
+        <a onmouseover="overButton(this)" onmouseout="outButton(this)" onclick="count4()" href="#">Button 04</a>
     </div>
-    <!--<script>
-        function overButton(x) {
-        x.style.backgroundColor = "red"
-        }
-    </script>-->
+    <p>This is a example of how the JavaScript can interact with HTML:</p>
+    <div id="counts">
+        <h2>Times clicked</h2>
+        <hr>
+        <p id="b1" class="count"><strong>01 </strong>Button:</p>
+        <p id="b2" class="count"><strong>02 </strong>Button:</p>
+        <p id="b3" class="count"><strong>03 </strong>Button: </p>
+        <p id="b4" class="count"><strong>04 </strong>Button: </p>
+    </div>
 </body>
 
 </html>

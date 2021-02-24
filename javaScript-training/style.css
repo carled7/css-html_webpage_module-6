@@ -11,7 +11,8 @@ p{
     text-align: center;
 }
 div{
-    margin-top: 25px;
+    margin-top: 25px;    
+    margin-bottom: 25px;
     text-align: center;
 }
 a{  
@@ -22,4 +23,16 @@ a{
     border: 0px;
     border-radius: 3px;
     color: #262626;
+}
+.count{
+    text-align: left;
+}
+#counts{
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 3px 20px;
+    border: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
 }
