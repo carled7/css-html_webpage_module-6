@@ -17,6 +17,16 @@ input, button{
 button{
     background-color: #68D0F2;
 }
-p{
-    text-align: center;
+li{
+    text-align: left;
+    line-height: 40px;
+    list-style: none;
+}
+
+ul{
+    background-color: #F2F2F2;
+    width: 40%;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 30px;
 }
