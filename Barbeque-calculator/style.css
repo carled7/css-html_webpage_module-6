@@ -1,0 +1,22 @@
+body{
+    width: 40%;
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+input, button{
+    display: block;
+    border: none;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+button{
+    background-color: #68D0F2;
+}
+p{
+    text-align: center;
+}
