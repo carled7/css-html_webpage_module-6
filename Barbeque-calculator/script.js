@@ -18,6 +18,7 @@ function calculator() {
     var totalGarlicBread = (parseInt(a.value) + parseInt(c.value)) * hours.value;
     let garlicBread = document.getElementsByTagName("li")[2];
     garlicBread.innerText = "Amount of garlic bread: " + totalGarlicBread;
+
 }
 function efect(x){
     x.style.backgroundColor = "#306070"
