@@ -17,3 +17,7 @@
 .control-buttons{
     width: 3vw;
 }
+iframe{
+    width: 100%;
+    height: 30vw;
+}
