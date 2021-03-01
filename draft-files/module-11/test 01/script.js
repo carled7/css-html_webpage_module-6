@@ -2,6 +2,6 @@
 
  image.addEventListener("click", function(){
 
-    image.setAttribute("src", "thumbs-down.svg")
+   image.setAttribute("src", "thumbs-down.svg");
 
  })

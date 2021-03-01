@@ -1,0 +1,19 @@
+#container{
+    position: relative;
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+}
+#video{
+    width: 100%;
+}
+#control-panel{
+    background-image: linear-gradient(to top, rgb(7, 13, 13) 60%, rgba(7, 13, 13, 0));
+    position: relative;
+    padding: 10px;
+    top: 100%;
+    transform: translateY(-100%);
+}
+.control-buttons{
+    width: 3vw;
+}

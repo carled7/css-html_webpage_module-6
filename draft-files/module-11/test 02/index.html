@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" onmouseover="showPlayer()" onmouseout="hidePlayer()">
+        <video src="gtaVTrailer.mp4" id="video"></video>
+
+        <div id="control-panel">
+            <img class="control-buttons" onclick="turnDown()" src="./assets/volume-1.svg" alt="turnDown">
+            <img class="control-buttons" onclick="skipBack()" src="./assets/skip-back.svg" alt="skip-back">
+            <img class="control-buttons" onclick="pauseFunction()" src="./assets/pause.svg" alt="pause">
+            <img class="control-buttons" onclick="playFunction()" src="./assets/play.svg" alt="play">
+            <img class="control-buttons" onclick="skipForward()" src="./assets/skip-forward.svg" alt="skip-forward">
+            <img class="control-buttons" onclick="turnUp()" src="./assets/volume-2.svg" alt="turnUp">
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
