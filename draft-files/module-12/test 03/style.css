@@ -1,0 +1,23 @@
+body{
+    width: 60vw;
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.A, .B{
+    padding: 10px;
+    text-align: center;
+}
+.A{
+    color: white;
+    background-color: darkgray;
+}
+.B{
+    background-color: #F5F5F5;
+}
