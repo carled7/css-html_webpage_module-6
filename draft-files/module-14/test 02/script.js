@@ -9,7 +9,7 @@ let users = [
     newUser("Louis", 15)
 ]
 
-function arrayToString(){
+function arrayToString(users ){
     return users.name + " is " + users.age + " years old";
 }
 
