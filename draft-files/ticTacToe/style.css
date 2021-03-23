@@ -1,0 +1,85 @@
+body{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    margin-top: 10px;
+}
+button{
+    padding: 10px;
+    background-color: #E8170C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    width: 75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+button:hover{
+    animation: buttonInteraction 100ms ease;
+    animation-fill-mode: forwards;
+}
+.counter{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline;
+    padding: 10px;
+}
+section{
+    margin: 50px;
+}
+#counterX::before{
+    content: "\274C";
+    margin: 10px;
+}
+#counterO::before{
+    content: "\2B55";
+    margin: 10px;
+}
+.square{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: #F2F2F2;
+    animation: hideElement 1s ease-in;
+}
+@keyframes buttonInteraction{
+    0% { width: 75px; background-color: #E8170C;}
+    100% {  width: 80px; background-color: #C2130A;}
+}
+@keyframes showElement{
+    0% { opacity: 0; font-size: 70%;}
+    100% { opacity: 1; font-size: 50px;}
+}
+.O{
+    position: relative;
+}
+.O:after{
+    content: "\2B55";
+    font-size: 50px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    line-height: 100px;
+    animation: showElement 100ms ease-in ;
+}
+.X{
+    position: relative;
+}
+.X:after{
+    content: "\274C";
+    font-size: 50px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    line-height: 100px;
+    animation: showElement 100ms ease-in;
+}
