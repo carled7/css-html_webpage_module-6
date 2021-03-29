@@ -3,6 +3,7 @@ let game = {
     lockMode: false,
     firstCard: null,
     secondCard: null,
+    finishGame: 0,
 
     setCard: function (id) {
 
@@ -14,30 +15,38 @@ let game = {
 
         if (!this.firstCard) {
             this.firstCard = card;
-            return true;
+            this.firstCard.flipped = true;
+            let firstCardView = document.getElementById(this.firstCard.id);
+            firstCardView.classList.add("flip");
+            //return true;
         } else {
             this.secondCard = card;
+            this.firstCard.flipped = true;
             this.lockMode = true;
-            return true;
+            //return true;
         }
-        /*if (!this.secondCard) {
-            this.secondCard = card;
+        while (!this.firstCard || !this.secondCard) {
+            return false;
         }
-        if(this.firstCard && this.secondCard){
-            return true;
-        }*/
+        return true;
     },
 
     checkMatch: function () {
-        if (this.secondCard) {
-            return this.firstCard.icon == this.secondCard.icon;
-        }
+        let match = this.firstCard.icon === this.secondCard.icon;
+        isGameOver();
+        return match;       
     },
 
     clearCards: function () {
         this.firstCard = null;
         this.secondCard = null;
         this.lockMode = false;
+    },
+
+    unFlipCards() {
+        this.firstCard.flipped = false;
+        this.secondCard.flipped = false;
+        this.clearCards();
     },
 
     techs: ['bootstrap',
