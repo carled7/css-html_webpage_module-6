@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap training</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
+
+<style>
+
+.car-item-style{
+    text-align: center;
+    line-height: 200px;
+}
+
+</style>
 <body> 
-    <nav class="navbar navbar-expand bg-light justify-content-center navbar-dark">
-        <ul class="navbar-nav ">
-            <li class="navbar-item nav-link"><a href="#html" data-toggle="tab">html</a></li>
-            <li class="navbar-item nav-link"><a href="#css" data-toggle="tab">css</a></li>
-            <li class="navbar-item nav-link"><a href="#js" data-toggle="tab">JavaScript</a></li>
-            <li class="navbar-item nav-link"><a href="#bootstrap" data-toggle="tab">Bootstrap</a></li>
+    <nav class="navbar navbar-expand bg-dark justify-content-center ">
+        <ul class="navbar-nav">
+            <li class="navbar-item "><a  href="#html" class="text-light nav-link" data-toggle="tab">html</a></li>
+            <li class="navbar-item "><a href="#css" class="text-light nav-link" data-toggle="tab">css</a></li>
+            <li class="navbar-item "><a href="#js" class="text-light nav-link" data-toggle="tab">JavaScript</a></li>
+            <li class="navbar-item "><a href="#bootstrap" class="text-light nav-link" data-toggle="tab">Bootstrap</a></li>
         </ul>
     </nav>
     <div class="container p-4" id="paragraph">        
@@ -41,6 +49,43 @@
         <li class="page-item"><a href="#" class="page-link">Page 2</a></li>
         <li class="page-item"><a href="#" class="page-link">Page 3</a></li>
     </ul>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <div class=" carousel slide" id="myCarousel" data-ride="carousel">
+
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="car-item-style d-block bg-primary text-light">Slide 1</div>
+            </div>
+            <div class="carousel-item">
+                <div class="car-item-style d-block bg-info text-light">Slide 2</div>
+            </div>
+            <div class="carousel-item">
+                <div class="car-item-style d-block bg-dark text-light">Slide 3</div>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary d-flex my-3 mx-auto" data-toggle="modal" data-target="#myModal">Modal</button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h1>Lorem ipsum dolor sit</h1></div>
+                <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus, suscipit, sequi nesciunt molestias, obcaecati iste qui quia et fugit nisi nam ad iusto ipsam eos voluptates eligendi placeat! Numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, voluptatem incidunt quos qui voluptatum in dolore expedita consequuntur! Mollitia itaque explicabo vitae, assumenda consectetur laborum unde blanditiis beatae officia iure. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam iusto quasi, harum temporibus nulla error facilis, blanditiis tenetur cupiditate, tempora eligendi incidunt officiis modi nemo. Tempora vitae quos tenetur a?</div>
+                <div class="modal-footer"><button class="btn btn-success mx-auto">Lorem</button></div>
+            </div>
+        </div>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
