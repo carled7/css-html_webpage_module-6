@@ -1,22 +1,23 @@
 //console.log("Hello World!");
 
-let args = process.argv.slice(2);
-let result;
+/*  let args = process.argv.slice(2);
+    let result;
+    let calc = require("./calc.js");
 
-function soma(x, y){
-    return Number(x) + Number(y);
-}
-function mult(x, y){
-    return Number(x) * Number(y);
-}
+    if(args[0] == "m"){
+        result = calc.mult(args[1], args[2]);
+    }else if(args[0] == "s"){
+        result = calc.soma(args[1], args[2]);
+    }else{
+        console.log("Invalid input");
+    }
 
-if(args[0] == "m"){
-    result = mult(args[1], args[2]);
-}else if(args[0] == "s"){
-    result = soma(args[1], args[2]);
-}else{
-    console.log("Invalid input");
-}
+    console.log(result); */
+
+let fs = require('fs');
 
 
-console.log(result);
+fs.readFile("HelloWorld.txt", "UTF8", (error, data) => {
+    if(error){throw error};
+    console.log(data);
+})
